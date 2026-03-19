@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ken3D</title>
+  <link rel="icon" href="./icons/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="./icons/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Libre+Barcode+39+Text&family=Press+Start+2P&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo" onclick="showPage('home')">KEN3D</div>
+    <nav>
+      <button class="nav-btn" id="btn-contact" onclick="showPage('contact')">
+        <span data-en="Contact" data-ja="連絡先">Contact</span>
+      </button>
+      <button class="nav-btn" id="btn-lang" onclick="toggleLang()">
+        <span data-en="日本語" data-ja="English">日本語</span>
+      </button>
+      <button class="nav-btn" id="btn-dark" onclick="toggleDark()">
+        <span data-en="Dark" data-ja="ダーク">Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="page visible" id="page-home">
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <div class="page" id="page-contact">
+    <div class="contact-inner">
+      <button class="back-btn" onclick="showPage('home')">← <span data-en="Back to Work" data-ja="作品に戻る">Back to
+          Work</span></button>
+      <h2 class="contact-heading" data-en="Let's <em>Connect</em>" data-ja="お<em>問い合わせ</em>">Let's <em>Connect</em></h2>
+      <p class="contact-sub" data-en="Available for freelance &amp; collaborations." data-ja="フリーランス・コラボレーションのご依頼はこちら。">
+        Available for freelance &amp; collaborations.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:ken3d.studio@gmail.com">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-label">
+              <div class="contact-label-top" data-en="Email" data-ja="メール">Email</div>
+              <div class="contact-label-val">ken3d.studio@gmail.com</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a></li>
+        <li><a href="https://bsky.app/profile/ken3dart.bsky.social" target="_blank">
+            <div class="contact-icon">
+              <i class="fa-brands fa-bluesky"></i>
+            </div>
+            <div class="contact-label">
+              <div class="contact-label-top">Bluesky</div>
+              <div class="contact-label-val">ken3dart.bsky.social</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a></li>
+        <li><a href="https://www.pixiv.net/users/15244259" target="_blank">
+            <div class="contact-icon">
+              <i class="fa-brands fa-pixiv"></i>
+            </div>
+            <div class="contact-label">
+              <div class="contact-label-top" data-en="pixiv" data-ja="pixiv">pixiv</div>
+              <div class="contact-label-val">Ken3D</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a></li>
+        <li><a href="https://artstation.com/ken_3d" target="_blank">
+            <div class="contact-icon">
+              <i class="fa-brands fa-artstation"></i>
+            </div>
+            <div class="contact-label">
+              <div class="contact-label-top">Artstation</div>
+              <div class="contact-label-val">ken_3d</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+    <div class="modal" id="modal-inner">
+      <div class="modal-close">
+        <button class="modal-close-btn" onclick="closeModal(null, true)" data-en="✕ Close" data-ja="✕ 閉じる">✕
+          Close</button>
+      </div>
+      <img class="modal-hero" id="modal-hero" src="" alt="" />
+      <div class="modal-body">
+        <div class="modal-tag" id="modal-tag"></div>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <div class="modal-date" id="modal-date"></div>
+        <div class="modal-divider"></div>
+        <p class="modal-text" id="modal-text"></p>
+        <div class="modal-images" id="modal-images"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>© 2026 Ken3D All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
