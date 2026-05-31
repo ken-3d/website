@@ -100,6 +100,16 @@ const POSTS = [
     {
         id: 1,
         tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "Neo City Girl", ja: "ネオシティガール" },
+        date: { en: "May 2026", ja: "2026年5月" },
+        thumb: "images/20260531/image_01.webp",
+        hero: "images/20260531/image_01.webp",
+        text: { en: "Bi-weekly challenge prompt 'Uniform'.", ja: "2026隔週イラストチャレンジ。題材は「制服」。" },
+        images: ["images/20260531/image_02.webp"]
+    },
+    {
+        id: 2,
+        tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Crimson Flower", ja: "真紅の花" },
         date: { en: "March 2026", ja: "2026年3月" },
         thumb: "images/20260316/image_01.webp",
@@ -108,7 +118,7 @@ const POSTS = [
         images: []
     },
     {
-        id: 2,
+        id: 3,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Tsukuyomi", ja: "ツクヨミ" },
         date: { en: "January 2026", ja: "2026年1月" },
@@ -118,7 +128,7 @@ const POSTS = [
         images: []
     },
     {
-        id: 3,
+        id: 4,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Tree House", ja: "木の家" },
         date: { en: "December 2025", ja: "2025年12月" },
@@ -128,7 +138,7 @@ const POSTS = [
         images: ["images/20251230/image_02.webp", "images/20251230/image_03.webp", "images/20251230/image_04.webp", "images/20251230/image_05.webp", "images/20251230/image_06.webp", "images/20251230/image_07.webp", "images/20251230/image_08.webp", "images/20251230/image_09.webp"]
     },
     {
-        id: 4,
+        id: 5,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Duel", ja: "決闘" },
         date: { en: "October 2025", ja: "2025年10月" },
@@ -138,7 +148,7 @@ const POSTS = [
         images: []
     },
     {
-        id: 5,
+        id: 6,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Dragon", ja: "ドラゴン" },
         date: { en: "October 2025", ja: "2025年10月" },
@@ -148,7 +158,7 @@ const POSTS = [
         images: []
     },
     {
-        id: 6,
+        id: 7,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Asuka / Air", ja: "アスカ / Air" },
         date: { en: "December 2023", ja: "2023年12月" },
@@ -158,7 +168,7 @@ const POSTS = [
         images: ["images/20231225/image_02.webp", "images/20231225/image_03.webp"]
     },
     {
-        id: 7,
+        id: 8,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Floating Ruin", ja: "浮かぶ廃墟" },
         date: { en: "February 2023", ja: "2023年2月" },
@@ -168,7 +178,7 @@ const POSTS = [
         images: ["images/20230213/image_02.webp"]
     },
     {
-        id: 8,
+        id: 9,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Santa in Chaldea", ja: "カルデアのサンタ" },
         date: { en: "December 2022", ja: "2022年12月" },
@@ -178,7 +188,7 @@ const POSTS = [
         images: ["images/20221223/image_02.webp"]
     },
     {
-        id: 9,
+        id: 10,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "Lament of The Fallen", ja: "罪人の挽歌" },
         date: { en: "September 2022", ja: "2022年9月" },
@@ -188,7 +198,7 @@ const POSTS = [
         images: ["images/20220919/image_02.webp"]
     },
     {
-        id: 10,
+        id: 11,
         tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "TEUTHIS", ja: "テウティス" },
         date: { en: "October 2021", ja: "2021年10月" },
