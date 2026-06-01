@@ -200,6 +200,36 @@ const POSTS = [
     {
         id: 11,
         tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "FORCE February Weekly Character Design Challenge", ja: "FORCE 2月週間キャラクターデザインチャレンジ" },
+        date: { en: "February 2022", ja: "2022年02月" },
+        thumb: "images/20220231/image_01.webp",
+        hero: "images/20220231/image_01.webp",
+        text: { en: "Submissions for February Character Design Challenge Michael Mattesi's FORCE Friday", ja: "2022年2月週間キャラクターデザインチャレンジ 参加作品" },
+        images: ["images/20220231/image_02.webp", "images/20220231/image_03.webp", "images/20220231/image_04.webp", "images/20220231/image_05.webp"]
+    },
+    {
+        id: 12,
+        tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "Station", ja: "ステーション" },
+        date: { en: "January 2022", ja: "2022年1月" },
+        thumb: "images/20220103/image_01.webp",
+        hero: "images/20220103/image_01.webp",
+        text: { en: "Experiment with JSplacement tool.", ja: "JSplacementツールのテスト。" },
+        images: []
+    },
+    {
+        id: 13,
+        tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "Leviathan Falls", ja: "レヴィアタン・フォールズ" },
+        date: { en: "January 2022", ja: "2022年1月" },
+        thumb: "images/20220102/image_01.webp",
+        hero: "images/20220102/image_01.webp",
+        text: { en: "Fan made concept art for the final book of The Expanse series Leviathan Falls by James S. A. Corey.", ja: "『エクスパンス』シリーズ最終巻『レヴィアタン・フォールズ』のファンアート。" },
+        images: []
+    },
+    {
+        id: 14,
+        tag: { en: "Illustration", ja: "イラスト" },
         title: { en: "TEUTHIS", ja: "テウティス" },
         date: { en: "October 2021", ja: "2021年10月" },
         thumb: "images/20211031/image_01.webp",
@@ -207,6 +237,26 @@ const POSTS = [
         text: { en: "Made for a Halloween illustration exchange event. OG character of recipient.", ja: "2021ハロウィンイラスト交換イベント作品。交換相手のオリジナルキャラ。" },
         images: ["images/20211031/image_02.webp", "images/20211031/image_03.webp"]
     },
+    {
+        id: 15,
+        tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "Apollo 11", ja: "アポロ 11号" },
+        date: { en: "July 2019", ja: "2019年7月" },
+        thumb: "images/20190716/image_01.webp",
+        hero: "images/20190716/image_01.webp",
+        text: { en: "Art celebrating 50 anniversary of Apollo 11.", ja: "アポロ 11号の50周年記念アート。" },
+        images: ["images/20190716/image_02.webp", "images/20190716/image_03.webp"]
+    },
+    {
+        id: 16,
+        tag: { en: "Illustration", ja: "イラスト" },
+        title: { en: "Miles Moralis", ja: "マイルス・モラリス" },
+        date: { en: "February 2019", ja: "2019年2月" },
+        thumb: "images/20190223/image_01.webp",
+        hero: "images/20190223/image_01.webp",
+        text: { en: "Miles Moralis from Spider-Man: Into the Spider-Verse. Recreated the visual style of the film with Blender. Spider-Verse Inspired Shader for EEVEE that I made for this projectcan be downloaded from here: https://gum.co/gQhLp", ja: "スパイダーマン: スパイダーバース主人公のマイルズ・モラリス。Blenderで映画のビジュアルスタイルを再現。シェーダはこちらでダウンロード可能：https://gum.co/gQhLp" },
+        images: ["images/20190223/image_02.webp", "images/20190223/image_03.webp", "images/20190223/image_04.webp", "images/20190223/image_05.webp"]
+    }
 ];
 
 buildGallery();
