@@ -74,10 +74,10 @@ footer {
 }
 
 .logo {
-    font-family: 'Libre Barcode 39 Text', sans-serif;
-    font-weight: 300;
-    font-size: clamp(2.0rem, 3vw, 1.7rem);
-    letter-spacing: 0.12em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    letter-spacing: 1.0em;
     color: var(--text);
     text-decoration: none;
     transition: color var(--transition);
@@ -104,7 +104,7 @@ nav {
     text-transform: uppercase;
     color: var(--text2);
     background: none;
-    border: 1px solid var(--border);
+    border: 0px solid var(--border);
     border-radius: var(--radius);
     padding: 0.42rem 0.85rem;
     cursor: pointer;
