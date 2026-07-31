@@ -52,22 +52,19 @@ function showPage(name) {
     window.scrollTo(0, 0);
 }
 
+function updateThemeButtonIcon() {
+    const btn = document.getElementById('btn-dark');
+    const icon = btn.querySelector('i');
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    icon.className = `fa-solid ${isDark ? 'fa-moon' : 'fa-sun'}`;
+    btn.classList.toggle('active', isDark);
+}
+
 function toggleDark() {
     const html = document.documentElement;
     const isDark = html.getAttribute('data-theme') === 'dark';
     html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    const btn = document.getElementById('btn-dark');
-    const span = btn.querySelector('span');
-    if (isDark) {
-        span.setAttribute('data-en', 'Dark');
-        span.setAttribute('data-ja', 'ダーク');
-        span.textContent = currentLang === 'en' ? 'Dark' : 'ダーク';
-    } else {
-        span.setAttribute('data-en', 'Light');
-        span.setAttribute('data-ja', 'ライト');
-        span.textContent = currentLang === 'en' ? 'Light' : 'ライト';
-    }
-    btn.classList.toggle('active', !isDark);
+    updateThemeButtonIcon();
 }
 
 function toggleLang() {
@@ -78,18 +75,12 @@ function toggleLang() {
     });
     buildGallery();
     document.querySelector('.modal-close-btn').textContent = currentLang === 'en' ? '✕ Close' : '✕ 閉じる';
-    document.getElementById('btn-lang').querySelector('span').textContent = currentLang === 'en' ? '日本語' : 'English';
     document.getElementById('btn-lang').classList.toggle('active', currentLang === 'ja');
 }
 
 function applySystemTheme(dark) {
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-    const btn = document.getElementById('btn-dark');
-    const span = btn.querySelector('span');
-    span.setAttribute('data-en', dark ? 'Light' : 'Dark');
-    span.setAttribute('data-ja', dark ? 'ライト' : 'ダーク');
-    span.textContent = currentLang === 'en' ? (dark ? 'Light' : 'Dark') : (dark ? 'ライト' : 'ダーク');
-    btn.classList.toggle('active', dark);
+    updateThemeButtonIcon();
 }
 
 const darkMQ = window.matchMedia('(prefers-color-scheme: dark)');

@@ -70,7 +70,9 @@ footer {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--text2);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
 }
 
 .logo {
@@ -105,11 +107,21 @@ nav {
     color: var(--text2);
     background: none;
     border: 0px solid var(--border);
-    border-radius: var(--radius);
-    padding: 0.42rem 0.85rem;
+    border-radius: 999px;
+    padding: 0;
     cursor: pointer;
     transition: color var(--transition), border-color var(--transition), background var(--transition);
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.nav-btn i {
+    font-size: 0.95rem;
+    line-height: 1;
 }
 
 .nav-btn:hover {
@@ -119,8 +131,8 @@ nav {
 }
 
 .nav-btn.active {
-    color: var(--accent);
-    border-color: var(--accent);
+    color: var(--text2);
+    border-color: var(--border);
 }
 
 /* PAGES */

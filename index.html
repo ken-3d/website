@@ -21,14 +21,14 @@
   <header>
     <div class="logo" onclick="showPage('home')">KEN3D.</div>
     <nav>
-      <button class="nav-btn" id="btn-contact" onclick="showPage('contact')">
-        <span data-en="Contact" data-ja="連絡先">Contact</span>
+      <button class="nav-btn" id="btn-contact" title="Contact" onclick="showPage('contact')" aria-label="Contact">
+        <i class="fa-solid fa-address-card" aria-hidden="true"></i>
       </button>
-      <button class="nav-btn" id="btn-lang" onclick="toggleLang()">
-        <span data-en="日本語" data-ja="English">日本語</span>
+      <button class="nav-btn" id="btn-lang" title="Toggle language" onclick="toggleLang()" aria-label="Toggle language">
+        <i class="fa-solid fa-language" aria-hidden="true"></i>
       </button>
-      <button class="nav-btn" id="btn-dark" onclick="toggleDark()">
-        <span data-en="Dark" data-ja="ダーク">Dark</span>
+      <button class="nav-btn" id="btn-dark" title="Toggle theme" onclick="toggleDark()" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
       </button>
     </nav>
   </header>
@@ -119,7 +119,7 @@
 
   <footer>
     <div class="footer">
-      <p>© 2026 Ken3D All Rights Reserved.</p>
+      <p>Copyright © 2026 Ken3D All Rights Reserved.</p>
     </div>
   </footer>
 
